@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MovieCatalog</title>
+    <title>Movie Catalog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <div class="header">
+      <button type="button"><%= link_to 'Movies', movies_path %></button>
+      <button type="button"><%= link_to 'Add Movie', new_movie_url %></button>
+    </div>
+
     <%= yield %>
   </body>
 </html>

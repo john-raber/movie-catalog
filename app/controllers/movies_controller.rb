@@ -8,19 +8,19 @@ class MoviesController < ApplicationController
   def show
   end
 
-  # def new
-  #   @movie = Movie.new
-  # end
-  #
-  # def create
-  #   @movie = Movie.create(movie_params)
-  #
-  #   # if @movie.errors.any?
-  #   #   render :new
-  #   # else
-  #   #   redirect_to @movie
-  #   # end
-  # end
+  def new
+    @movie = Movie.new
+  end
+
+  def create
+    @movie = Movie.create(movie_params)
+
+    if @movie.errors.any?
+      render :new
+    else
+      redirect_to @movie
+    end
+  end
 
   # def edit
   # end

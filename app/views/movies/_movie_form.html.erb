@@ -1,0 +1,28 @@
+<%= form_for @movie do |m| %>
+  <%= m.label :title %>
+  <%= m.text_field :title %>
+
+  <br><br>
+
+  <%= m.label :summary %>
+  <%= m.text_area :summary %>
+
+  <br><br>
+
+  <%= m.label :genre %>
+  <%= m.text_field :genre %>
+
+  <br><br>
+
+  <%= m.label :year %>
+  <%= m.number_field :year %>
+
+  <br><br>
+
+  <%= m.label :link, 'IMDb link' %>
+  <%= m.text_field :link %>
+
+  <br><br>
+
+  <%= m.submit %>
+<% end %>
