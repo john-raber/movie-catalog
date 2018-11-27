@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+
+<ul>
+  <% @movies.each do |movie| %>
+    <li>
+      <%= link_to movie.title, movie.link, target: :_blank %>
+    </li>
+  <% end %>
+</ul>
