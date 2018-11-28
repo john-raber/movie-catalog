@@ -1,1 +1,19 @@
 <h1><%= @movie.title %></h1>
+
+<% if @movie.link? %>
+  <%= link_to 'IMDb Page', @movie.link %>
+<% end %>
+
+<h4>Genre: <%= @movie.genre %></h4>
+
+<h4>Year: <%= @movie.year %></h4>
+
+<p>Summary: <%= @movie.summary %></p>
+
+<button type="button"><%= link_to 'Edit Movie', edit_movie_path(@movie) %></button>
+
+<br><br>
+
+<%= form_tag movie_path(@movie), method: :delete do %>
+  <%= submit_tag 'Delete Movie' %>
+<% end %>
