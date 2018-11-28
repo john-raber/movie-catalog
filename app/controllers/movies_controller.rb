@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
 
   def index
-    @movies = Movie.all
+    @movies = Movie.all.sort {|x, y| x.title <=> y.title }
   end
 
   def show

@@ -1,21 +1,21 @@
 <%= form_for @movie do |m| %>
   <%= m.label :title %>
-  <%= m.text_field :title %>
+  <%= m.text_field :title %> *
 
   <br><br>
 
   <%= m.label :summary %>
-  <%= m.text_area :summary %>
+  <%= m.text_area :summary %> *
 
   <br><br>
 
   <%= m.label :genre %>
-  <%= m.text_field :genre %>
+  <%= m.text_field :genre %> *
 
   <br><br>
 
   <%= m.label :year %>
-  <%= m.number_field :year %>
+  <%= m.number_field :year %> *
 
   <br><br>
 
@@ -26,3 +26,7 @@
 
   <%= m.submit %>
 <% end %>
+
+<br><br>
+
+* = required field
