@@ -1,4 +1,4 @@
-<%= form_for @movie do |m| %>
+<%= form_for @movie, html: { id: 'movie_form' } do |m| %>
   <%= m.label :title %>
   <%= m.text_field :title %> *
 
