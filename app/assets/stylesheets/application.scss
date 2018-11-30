@@ -15,3 +15,32 @@
  */
 
 @import "materialize";
+
+#movie_title:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+#movie_summary:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+#movie_genre:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+#movie_year:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+#movie_link:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}
+
+label {
+  color: #1976d2;
+}
