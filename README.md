@@ -47,7 +47,7 @@ running on) to get started.
   Displays a list of all of the movies included in the catalog sorted
   alphabetically by their title.
 
-- /movies/:id\:
+- /movies/:movie_id:
   Shows all of the cataloged information for a particular movie.
 
   Below the movie details there are buttons to edit the movie's information and
@@ -61,7 +61,7 @@ running on) to get started.
   error information will be displayed above the form explaining what part of the
   form needs to be updated.
 
-- /movies/:id/edit:
+- /movies/:movie_id/edit:
   Renders the form used to edit a movie. Fields marked with an asterisk are
   required. If the form is submitted without a required field, the error
   information will be displayed above the form explaining what part of the form
