@@ -13,6 +13,8 @@ Clone down this repository.
 From your console run the following:
 
 ```
+  cd movie-catalog
+
   bundle install
 
   rails db:create
