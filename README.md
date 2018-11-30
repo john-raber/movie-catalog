@@ -47,7 +47,7 @@ running on) to get started.
   Displays a list of all of the movies included in the catalog sorted
   alphabetically by their title.
 
-- /movies/:id:
+- /movies/:id\:
   Shows all of the cataloged information for a particular movie.
 
   Below the movie details there are buttons to edit the movie's information and
