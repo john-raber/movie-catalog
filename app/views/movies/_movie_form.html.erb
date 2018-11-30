@@ -1,30 +1,50 @@
 <%= form_for @movie, html: { id: 'movie_form' } do |m| %>
-  <%= m.label :title %>
-  <%= m.text_field :title %> *
+  <div class="row">
+    <div class="col s6">
+      <%= m.label :title, 'Title *' %>
+      <%= m.text_field :title %>
+    </div>
+  </div>
 
   <br><br>
 
-  <%= m.label :summary %>
-  <%= m.text_area :summary %> *
+  <div class="row">
+    <div class="col s6">
+      <%= m.label :summary, 'Summary *' %>
+      <%= m.text_area :summary, class: 'materialize-textarea' %>
+    </div>
+  </div>
 
   <br><br>
 
-  <%= m.label :genre %>
-  <%= m.text_field :genre %> *
+  <div class="row">
+    <div class="col s6">
+      <%= m.label :genre, 'Genre *' %>
+      <%= m.text_field :genre %>
+    </div>
+  </div>
 
   <br><br>
 
-  <%= m.label :year %>
-  <%= m.number_field :year %> *
+  <div class="row">
+    <div class="col s6">
+      <%= m.label :year, 'Year *' %>
+      <%= m.number_field :year %>
+    </div>
+  </div>
 
   <br><br>
 
-  <%= m.label :link, 'IMDb link' %>
-  <%= m.text_field :link %>
+  <div class="row">
+    <div class="col s6">
+      <%= m.label :link, 'IMDb link' %>
+      <%= m.text_field :link %>
+    </div>
+  </div>
 
   <br><br>
 
-  <%= m.submit %>
+  <%= m.submit :class => 'btn' %>
 <% end %>
 
 <br><br>

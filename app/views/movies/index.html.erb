@@ -1,9 +1,7 @@
 <h1>Movies</h1>
 
-<ul>
+<div class="collection">
   <% @movies.each do |movie| %>
-    <li>
-      <%= link_to movie.title, movie %>
-    </li>
+    <%= link_to movie.title, movie, class: 'collection-item blue-text text-darken-2' %>
   <% end %>
-</ul>
+</div>

@@ -1,8 +1,8 @@
-# Movie Catalog
+# Overview
 
-This movie catalog stores information about movies such as their title, genre,
-year released, as well as a short summary of what the movie is about. Certain
-movies will have a link to their related IMDb page.
+This is a movie catalog which stores information about movies such as their
+title, genre, year released, as well as a short summary of what the movie is
+about. Certain movies will have a link to their related IMDb page.
 
 # Usage
 
@@ -42,3 +42,5 @@ running on)
   required. If the form is submitted without a required field, the error
   information will be displayed above the form explaining what part of the form
   needs to be updated.
+
+# Tests

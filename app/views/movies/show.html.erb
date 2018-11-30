@@ -1,19 +1,27 @@
 <h1><%= @movie.title %></h1>
 
-<% if @movie.link? %>
-  <%= link_to 'IMDb Page', @movie.link %>
-<% end %>
+<h5>Genre: <%= @movie.genre %></h5>
 
-<h4>Genre: <%= @movie.genre %></h4>
+<h5>Year: <%= @movie.year %></h5>
 
-<h4>Year: <%= @movie.year %></h4>
+<div class="row">
+  <div class="col s6">
+    <p>Summary: <%= @movie.summary %></p>
+  </div>
+</div>
 
-<p>Summary: <%= @movie.summary %></p>
-
-<button type="button"><%= link_to 'Edit Movie', edit_movie_path(@movie) %></button>
-
-<br><br>
-
-<%= form_tag movie_path(@movie), method: :delete do %>
-  <%= submit_tag 'Delete Movie' %>
-<% end %>
+<div class="row">
+  <% if @movie.link? %>
+    <div class="col s2">
+      <%= link_to 'IMDb Page', @movie.link, class: 'btn' %>
+    </div>
+  <% end %>
+  <div class="col s2">
+    <%= link_to 'Edit Movie', edit_movie_path(@movie), class: 'btn' %>
+  </div>
+  <div class="col s2">
+    <%= form_tag movie_path(@movie), method: :delete do %>
+      <%= submit_tag 'Delete Movie', class: 'btn' %>
+    <% end %>
+  </div>
+</div>

@@ -10,11 +10,19 @@
   </head>
 
   <body>
-    <div class="header">
-      <button type="button"><%= link_to 'Movies', movies_path %></button>
-      <button type="button"><%= link_to 'Add Movie', new_movie_url %></button>
+      <nav>
+        <div class="nav-wrapper blue darken-3">
+          <div class="container">
+            <a href="/" class='brand-logo center'>Movie Catalog</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><%= link_to 'Movies', movies_path %></li>
+              <li><%= link_to 'Add Movie', new_movie_path %></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class='container'>
+      <%= yield %>
     </div>
-
-    <%= yield %>
   </body>
 </html>
