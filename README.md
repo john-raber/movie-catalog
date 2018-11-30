@@ -12,14 +12,26 @@ From your console run the following:
 
 ```
   bundle install
+
   rails db:create
+
   rails db:migrate
 ```
+
+You can run `rails db:seed` to insert a few movies into the catalog to start
+with.
+
+Alternatively, if you would like to start from scratch you can simply skip this
+step.
+
+If you would like to set up your catalog with your own list of movies, you can
+update the db/seeds.rb file with the movies that you would like in the catalog
+and then run `rails db:seed`.
 
 Run rails s from your console. This should start the server on port 3000.
 
 In your browser navigate to localhost:3000 (or whichever port your server is
-running on)
+running on) to get started.
 
 # Pages
 
