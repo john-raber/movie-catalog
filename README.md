@@ -4,6 +4,8 @@ This is a movie catalog which stores information about movies such as their
 title, genre, year released, as well as a short summary of what the movie is
 about. Certain movies will have a link to their related IMDb page.
 
+You can play around with a version deployed to heroku if you [click here](https://stark-brushlands-91092.herokuapp.com/).
+
 # Usage
 
 Clone down this repository.
