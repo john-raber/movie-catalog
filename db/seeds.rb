@@ -36,8 +36,9 @@ Movie.create([{
   },
   {
     title: 'Black Panther',
-    summary: 'Action, Adventure, Sci-Fi',
-    link: 'https://www.imdb.com/title/tt1825683/?ref_=ttls_li_tt',
+    summary: 'T\'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country\'s past.',
+    genre: 'Action, Adventure, Sci-Fi',
+    link: 'https://www.imdb.com/title/tt1825683/?ref_=nv_sr_2',
     year: 2018
   }
 ])

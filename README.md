@@ -6,7 +6,15 @@ about. Certain movies will have a link to their related IMDb page.
 
 # Usage
 
-Clone down this repository and run bundle install.
+Clone down this repository.
+
+From your console run the following:
+
+```
+  bundle install
+  rails db:create
+  rails db:migrate
+```
 
 Run rails s from your console. This should start the server on port 3000.
 
