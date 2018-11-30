@@ -13,7 +13,7 @@
 <div class="row">
   <% if @movie.link? %>
     <div class="col s2">
-      <%= link_to 'IMDb Page', @movie.link, class: 'btn blue darken-2' %>
+      <%= link_to 'IMDb Page', @movie.link, class: 'btn blue darken-2', target: '_blank' %>
     </div>
   <% end %>
   <div class="col s2">
