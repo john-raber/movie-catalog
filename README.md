@@ -44,12 +44,12 @@ running on) to get started.
   alphabetically by their title.
 
 - /movies/:id
-  Shows all of the cataloged information for a particular movie. If a link to
-  the movie's IMDb page is included in the catalog, that link will be displayed
-  directly below the movie title.
+  Shows all of the cataloged information for a particular movie.
 
-  Below the movie details there are links to edit the movie's information and to
-  delete the movie from the catalog.
+  Below the movie details there are buttons to edit the movie's information and
+  to delete the movie from the catalog. If a link to the movie's IMDb page is
+  included in the catalog, that link will be displayed in front of the edit and
+  delete buttons.
 
 - /movies/new
   Renders the form used to add a movie to the catalog. Fields marked with an
@@ -64,3 +64,9 @@ running on) to get started.
   needs to be updated.
 
 # Tests
+
+- Controller tests have been implemented for navigation to each of the catalog's
+  pages as well as the create, update, and delete actions.
+
+- Feature tests have been implemented for the movie form for both creating and
+  editing a movie.
