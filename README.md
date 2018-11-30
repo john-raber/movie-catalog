@@ -39,15 +39,15 @@ running on) to get started.
 
 # Pages
 
-- Header
+- Header:
   The header includes links to return to the list of all movies and to insert a
   new movie into the catalog.
 
-- Home page and /movies
+- Home page and /movies:
   Displays a list of all of the movies included in the catalog sorted
   alphabetically by their title.
 
-- /movies/:id
+- /movies/:id:
   Shows all of the cataloged information for a particular movie.
 
   Below the movie details there are buttons to edit the movie's information and
@@ -55,13 +55,13 @@ running on) to get started.
   included in the catalog, that link will be displayed in front of the edit and
   delete buttons.
 
-- /movies/new
+- /movies/new:
   Renders the form used to add a movie to the catalog. Fields marked with an
   asterisk are required. If the form is submitted without a required field, the
   error information will be displayed above the form explaining what part of the
   form needs to be updated.
 
-- /movies/:id/edit
+- /movies/:id/edit:
   Renders the form used to edit a movie. Fields marked with an asterisk are
   required. If the form is submitted without a required field, the error
   information will be displayed above the form explaining what part of the form
@@ -74,3 +74,5 @@ running on) to get started.
 
 - Feature tests have been implemented for the movie form for both creating and
   editing a movie.
+
+- Run tests using `rspec`
